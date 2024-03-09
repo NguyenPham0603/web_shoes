@@ -1,0 +1,1 @@
+<i class="far fa-user-circle" style="color: #d63384;"></i>

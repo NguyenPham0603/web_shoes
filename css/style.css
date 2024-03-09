@@ -1,0 +1,341 @@
+body{
+    margin: 0; /*khoảng cách của nội dung đó*/
+    padding: 0; /*Khoảng cách nội dung với thành phần xung quanh*/
+}
+/* language */
+#language{
+	float:right;
+	top:0px;
+}
+#language img{
+	border: 1px solid white;
+	margin:3px;
+}
+#language img:hover{
+	border: 1px solid yellow;
+}
+
+.wrapper{
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Times New Roman';
+}
+
+/* .header{
+    background-image: url("../images/Baner/baner1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+} */
+.menu1{
+    height: 90px;
+    width: 100%;
+    background: #eed0f7;
+    font-weight: bold;
+}
+#main{
+    height: auto;
+    width: 100%;
+    margin: -15px auto;
+
+}
+
+.footer{
+    border: 0.5px solid white;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+}
+
+/* Menu */
+li.nav-item{
+    margin: auto;
+    font-family: 'Times New Roman';
+}
+#user a{
+    font-weight: 10;
+    font-size: 18px;
+    color: black;
+}
+#user a:hover{
+    color:blue;
+}
+#cart_menu{
+    outline: none;
+}
+
+
+/* border-radius: 5px; bo tròn góc
+    text-decoration: none; ẩn viền của link the a */
+
+.a{
+    background: none;
+    border: none;
+    color:#ff0080;
+    width:28px;
+    height:22px;
+    font-size: 18px;
+    /* text-align: center; */
+}
+i{
+    color: #d63384;
+}
+button.search{
+    cursor: pointer; /*hieu ung re chuot*/
+    /* margin-top: 5px; */
+}
+button.cart{
+    border-radius: 10px; 
+    border-color: #f778df; 
+    background: #ffa0c6; 
+    color: #05007a;
+}
+button.cart:hover{
+    color: red;
+    background:rgb(154, 229, 246);
+}
+
+button {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(238, 38, 195, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+ button:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(247, 30, 247, 0.5), 0 0 20px rgba(238, 38, 195, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+  }
+
+/*Main*/
+.sidebar{
+    color:rgb(247 179 222);
+    /* border: 1px solid #cc0066; */
+    height: 646px;
+    width: 15%;
+    margin-top: 5px;
+    float: left; /*nhưng thằng phía sau đều đổ về bên trái*/
+    background: #ffd7f1;
+}
+ul.list_sidebar{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    line-height: 25px;/*khoảng cách giữa dòng trên và dòng dưới*/
+}
+ul.list_sidebar li{
+    border: 0px solid #cc0066;
+    border-radius: 5px; /*bo tròn góc*/
+    margin: 7px;
+    padding: 5px;
+}
+ul.list_sidebar li a{
+    text-decoration: none;
+    text-align: left;
+    color:#ff0080;
+    display: block;
+    font-size: 22px;
+}
+ul.list_sidebar li:hover{
+    background: rgb(255, 185, 241);
+}
+.main_content{
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    float: right;
+    /* background: #ffd7f1; */
+}
+/*product*/
+ul.product_list{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    line-height: 5px; /*khoảng cách giữa dòng trên và dòng dưới*/
+}
+ul.product_list li{
+
+    border: 1px dashed #cc0066;
+    border-radius: 5px; /*bo tròn góc*/
+    margin: 5.4px;
+    width: 19.1%;
+    float: left;
+    height: 294px;
+    background: #a3fefe;
+
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: transform .3s;
+}
+ul.product_list li:hover img{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+
+ul.product_list li img{
+    width: 100%;
+    height: 168px;
+}
+ul.product_list li:hover{
+    background: rgb(255, 185, 241);
+}
+ul.product_list li a{
+    text-decoration: none;/* ẩn viền của link the a */
+ }
+ ul.product_list li a button {
+    height: 31px;
+    float: left;
+    margin-left: 78px;
+}
+
+.title_product{
+    text-align: center;
+    color: #cc0066;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.price_product{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+p.cate_product {
+    text-align: center;
+    color: #808080;
+}
+
+.clear{
+    clear: both; /*cả 2 hướng trái phải đều ko cho float, ngắt tại thẻ này*/
+}
+ul.list_pages{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+ul.list_pages li button{
+    float: left;
+    padding: 5px 13px;
+    margin: 5px;
+    display: block;
+}
+ul.list_pages li button a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+
+/*product_detail*/
+.wrapper_detail{
+    height: auto;
+    width: 96%;
+    margin: 0 auto;
+}
+.img_product{
+    float: left;
+    width: 30%;
+    margin-bottom: 30px;
+}
+.detail_product {
+    float: right;
+    width: 68%;
+    margin-top: 42px;
+}
+
+/*Cart*/
+i.far.fa-minus-square{
+    color: #ff0080;
+}
+i.far.fa-minus-square:hover{
+    color: rgb(94, 94, 240);
+}
+i.far.fa-plus-square{
+    color: #ff0080;
+}
+i.far.fa-plus-square:hover{
+    color: rgb(94, 94, 240);
+}
+/*trash*/
+i.far.fa-trash-alt.fa-2xl{
+    color: #ff0080;
+}
+i.far.fa-trash-alt.fa-2xl:hover{
+    color: rgb(94, 94, 240);
+}
+
+/*footer*/
+.footer_copyright{
+    text-align: center;
+    font-weight: bold;
+    color:#d63384;
+    font-size: 21px;
+    margin-top: 15px;
+}
+.footer_copyright a{
+    text-decoration: none;
+    color:#d63384;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dangky tr td{
+    padding: 5px;
+}
+
+.login_usr{
+    padding: 36px 51px;
+    margin: 50px 122px;
+    float: right;
+}
+.login_body{
+    background-image: url("../images/icon/backgound5.jpg");
+    background-repeat: no-repeat;
+    background-size: 1345px 730px;
+}
+.form-label{
+    font-weight: bold;
+}
+.register{
+    padding: 3px 69px;
+    margin: 0px 125px 45px 446px;
+}
+
+/* Payment */
+.wrapper_detail_bill{
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Times New Roman';
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+
